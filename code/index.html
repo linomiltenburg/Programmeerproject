@@ -6,21 +6,24 @@
   </head>
   <body>
     <div>
-      <h2>Vlees concsumptie per land</h2>
+      <h2>Gemiddelde vlees consumptie per land per jaar tussen 2000 en 2002</h2>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="/datamaps.world.min.js"></script>
     <div id="container" style="position: relative; width: 1000px; height: 500px;"></div>
+    <script src="datamap.js"></script>
     <div>
       <h2>Incidentie darmkanker per land</h2>
       <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
     </div>
-    <div id="container" style="position: relative; width: 1000px; height: 500px;"></div>
+    <script src="barchart.js"></script>
+    <svg id="barchart"></svg>
+    <link rel="stylesheet" type="text/css" href="datamap.css"/>
     <div>
       <h2>Scatterplot correlatie vleesconsumptie en darmkanker</h2>
       <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
     </div>
-    <div id="container" style="position: relative; width: 1000px; height: 500px;"></div>
+    <div id="container2" style="position: relative; width: 1000px; height: 500px;"></div>
   </body>
 </html>

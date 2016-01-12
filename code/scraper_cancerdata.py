@@ -2,6 +2,7 @@ import json
 
 with open('data_cancer.csv', 'r') as f:
     content = f.readlines()[0:72]
+
 print content
 python_list = []
 

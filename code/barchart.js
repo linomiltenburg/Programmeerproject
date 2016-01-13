@@ -3,7 +3,7 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
 
   console.log(data)
   // define width, height and margins
-  var margin = {top: 10, right: 50, bottom: 100, left: 50},
+  var margin = {top: 40, right: 50, bottom: 100, left: 50},
       width = 1000 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -31,7 +31,7 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>Frequency:</strong> <span style='color:red'>" + d.value + "</span>";
+    return "<strong>" + d.country + "</strong> <span style='color:red'>" + d.value + "</span>";
   })
 
   svg.call(tip);
@@ -69,10 +69,8 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(parseFloat(d.value)); })
-      .attr("height", function(d) { return height - y(d.value); });
-      //.on('mouseover', function(d) {
-      //   tip.show(d)
-      // })
-      //.on('mouseout', tip.hide)
+      .attr("height", function(d) { return height - y(d.value); })
+      .on('mouseover',tip.show)
+      .on('mouseout', tip.hide)
 
 });

@@ -28,7 +28,7 @@
   border-radius: 2px;
 }
 
-/* Creates a small triangle extender for the tooltip */
+ /*Creates a small triangle extender for the tooltip  */
 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
@@ -47,3 +47,39 @@
   top: 100%;
   left: 0;
 }
+
+/* style of the year buttons*/
+#button1 {
+  display: inline-block;
+}
+
+#button2 {
+  display: inline-block;
+}
+#button3 {
+  display: inline-block;
+}
+
+#button4 {
+  display: inline-block;
+}
+#button5 {
+  display: inline-block;
+}
+
+#button6 {
+  display: inline-block;
+}
+#button7 {
+  display: inline-block;
+}
+
+#button8 {
+  display: inline-block;
+}
+#button9 {
+  display: inline-block;
+}
+
+#button10 {
+  display: inline-block;

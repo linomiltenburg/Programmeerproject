@@ -1,6 +1,12 @@
 d3.json("meat_consumption.json", function(error, data) {
   if (error) return console.error(error);
 
+    // define slider
+    var slider = d3.slider().axis(true).min(1993).max(2002).step(1)
+    d3.select('#slider').call(slider)
+
+    console.log(data)
+
     array = {}
 
     for (i = 0, n = data.length; i < n; i++){
@@ -32,8 +38,6 @@ d3.json("meat_consumption.json", function(error, data) {
         array[id] = {fillKey:'class6', consumption: value}
       }
     };
-
-    console.log(array)
 
     // defining the world map
     var map = new Datamap({

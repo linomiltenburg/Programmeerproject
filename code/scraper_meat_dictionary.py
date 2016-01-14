@@ -3,14 +3,26 @@ import json
 with open('meat_consumption.csv', 'r') as f:
     content = f.readlines()[2:182]
 
-dictionaty = {}
+dictionary = {}
+index = 2
+years = [1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002]
 
-year = [1993,1994,1995,1996,1997,1998,1999,2000,2001,2002]
+for year in range(len(years)):
+    print years[year]
+    python_list = []
 
-for row in content:
-    splitted = row.split(",")
-    for i in range(len(year)):
+    for row in content:
+        splitted = row.split(",")
+        country = splitted[1]
+        data = splitted[index]
+        python_list.append([country, data])
+        dictionary[years[year]] = python_list
 
+    index += 1
 
-    python_list.append([country, average_data])
-    print python_list
+# convert  to json_list
+json_list = json.dumps(dictionary)
+print json_list
+# write json_list to file
+with open('data_meat_dictionary.json', 'w') as outfile:
+    json.dump(json_list, outfile)

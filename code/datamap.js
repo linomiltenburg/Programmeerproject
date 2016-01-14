@@ -1,11 +1,30 @@
+var bla = document.getElementById('button1')
+value = bla.getElementsByClassName('value')
+bla.onclick = updateData
+
+function updateData(value){
+  console.log(value);
+}
+
+// // get the class 'button' out of the html
+// var button = document.getElementsByTagName('button')
+// for (i = 0; i < button.length; i++){
+//   button_value = button[i].value
+// }
+//
+// button.onclick = updateData
+//
+// function updateData(){
+//   console.log(button);
+// }
+
+
 d3.json("meat_consumption.json", function(error, data) {
   if (error) return console.error(error);
 
-    // define slider
-    var slider = d3.slider().axis(true).min(1993).max(2002).step(1)
-    d3.select('#slider').call(slider)
-
-    console.log(data)
+  // define slider
+  var slider = d3.slider().axis(true).min(1993).max(2002).step(1)
+  d3.select('#slider').call(slider)
 
     array = {}
 

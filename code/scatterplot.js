@@ -5,10 +5,31 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
       width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
-  // setup x
-  var xValue = function(d) { return d.Calories;}, // data -> value
-      xScale = d3.scale.linear().range([0, width]), // value -> display
-      xMap = function(d) { return xScale(xValue(d));}, // data -> display
-      xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+  var svg = d3.select("#scatterplot")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom")
+      .ticks(10);
+
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left")
+      .ticks(10);
+
+  // draw x-axis
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+    .selectAll("text")
+      .style("text-anchor", "end")
+      .attr("dx", "-.5em")
+      .attr("dy", "-.4em")
+      .attr("transform", "rotate(-45)" );
 
 });

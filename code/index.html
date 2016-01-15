@@ -6,7 +6,7 @@
   </head>
   <body>
     <div>
-      <h2>Gemiddelde vlees consumptie per land per jaar tussen 1993 en 2002</h2>
+      <h2>Gemiddelde vleesconsumptie per land per jaar tussen 1993 en 2002</h2>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
@@ -14,7 +14,7 @@
     <script src="datamaps.world.min.js"></script>
     <script src="javascripts/d3.slider.js"></script>
 
-    <div id="button1" class="button"><input name="updateButton" type="button" value="1993"/></div>
+    <div id="button1" class="button"><input name="updateButton" type="button" value="1993" onclick="updateData(this)"/></div>
     <div id="button2" class="button"><input name="updateButton" type="button" value="1994"/></div>
     <div id="button3" class="button"><input name="updateButton" type="button" value="1995"/></div>
     <div id="button4" class="button"><input name="updateButton" type="button" value="1996"/></div>
@@ -40,6 +40,6 @@
       <h2>Scatterplot correlatie vleesconsumptie en darmkanker</h2>
       <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
     </div>
-    <div id="container2" style="position: relative; width: 1000px; height: 500px;"></div>
+    <svg id="scatterplot"></svg>
   </body>
 </html>

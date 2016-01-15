@@ -1,10 +1,12 @@
-var bla = document.getElementById('button1')
-value = bla.getElementsByClassName('value')
-bla.onclick = updateData
+// var button = document.getElementById('button1')
+// //value = button.getElementsByClassName('value')
+// button.onclick = updateData
 
-function updateData(value){
-  console.log(value);
+function updateData(){
+  button = document.getElementById("button1")
+  console.log(button);
 }
+
 
 // // get the class 'button' out of the html
 // var button = document.getElementsByTagName('button')

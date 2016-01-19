@@ -60,7 +60,7 @@ France,FRA,101.1,102.9,100.4,99.8,102.4,99.6,100,98.6,95.9,95.1,98.8,101.7,99.8,
 French Guiana,GUF,13.2,13.6,14,14.4,14.9,14.5,14.6,82.6,78.8,72.8,80.8,81.8,84.7,81.4,77.4,74.9,71.2,78.1,73.9,74.5,74.5,73.2,70.5,73,67.8,66.2,51.2,56.1,46.6,51.5,56.2,52.2,53.9,55.9,54.1,46.2,44.3,41.4,42.4,35.8,37.9,34
 French Polynesia,PYF,112.2,109.1,107.3,103,105.2,101.6,99.7,103.2,99,99.4,102.2,98.1,99.2,90.9,92.7,89.5,87.6,79.7,78,74.7,71,74.3,66.6,81.2,69.3,63.2,65.3,62.3,64,62.4,61.6,69.8,73.3,67.3,79.1,66,73.1,61.7,39.9,33.5,38.6,33.4
 Gabon,GAB,46,41.7,45.1,42.4,43.7,43.6,46.8,54,53.5,53.2,53.3,53.3,43,45.5,52.4,53.7,56.6,60.1,58.6,56.9,58.3,53.9,51.8,49.9,49.1,46.9,42.5,45.2,45.6,45.2,46,46.9,48.7,49.9,49.3,48.7,48.7,47,46.5,44.1,41.8,39.6
-"Gambia",GMB,5.2,5.3,6.4,6.2,5.4,5.8,5.8,6.1,7.5,6.9,7.2,9.2,7.9,7.5,9.2,9.1,8.1,8.3,8.1,8.5,8.7,9.3,9.4,9.7,9.9,10.2,10.9,11.2,11.5,12,12.2,12,12.1,11.8,11.7,11.7,11.5,11.3,11,10.9,10.7,10.5
+Gambia,GMB,5.2,5.3,6.4,6.2,5.4,5.8,5.8,6.1,7.5,6.9,7.2,9.2,7.9,7.5,9.2,9.1,8.1,8.3,8.1,8.5,8.7,9.3,9.4,9.7,9.9,10.2,10.9,11.2,11.5,12,12.2,12,12.1,11.8,11.7,11.7,11.5,11.3,11,10.9,10.7,10.5
 Georgia,GEO,26,29.7,29.1,28.7,28.8,29.7,29.3,29.6,20.8,20.7,23.6,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
 Germany,DEU,82.1,82,83.5,84,86.6,82.6,86,82.7,84.8,85.1,88,87.9,96.1,94.3,99.5,100.9,98.4,97.8,97.7,96.3,94.4,95.9,95.9,93.2,92.1,88.2,87.6,87.8,86.1,82.9,83,81.5,78.1,75,74.6,70.3,68.5,68.2,66.9,65.4,66.2,63.8
 Ghana,GHA,9.9,9.1,9.5,9.6,8.8,9.1,9.1,9.5,9.8,10.2,11,11.4,10.3,9.9,9.7,9.8,10,10.3,10.7,11.6,11.1,10.7,10.4,9.8,9.6,9.2,8.4,9,9.5,9,9.3,9.8,10.3,10.1,9.4,9.5,9.2,9.2,9.3,9.5,9.7,10.6
@@ -88,8 +88,8 @@ Japan,JPN,43.9,44.1,44.7,43.7,42.1,42,43.9,43.8,41.3,40.7,40.3,38.9,38.8,39.2,38
 Jordan,JOR,29.8,31.9,32.6,31.4,29.7,31.8,30.6,35,36.6,38.9,32.6,37.3,31,31.7,44.9,38.9,39.9,40.9,34.8,33.2,31.6,30.1,23.3,23.2,23.6,19,17.2,18.1,15.6,17.8,16.3,15.5,14.3,15.7,13.2,11.6,16.1,15.5,14,13.8,14.3,12.4
 Kazakhstan,KAZ,44.8,44.8,41.8,40.8,41.7,44.5,51.4,56.6,69.9,77.1,74.2,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
 Kenya,KEN,14.3,14.7,14.5,14.6,13.9,14.2,14.4,14.2,14.4,14.6,15.7,16,15,15.7,16.5,15.9,15.5,15.7,15.7,16.1,16,15.3,17.4,18.3,18.9,18.3,15.2,14.8,15.9,16.2,16.1,16.3,16.4,16.4,16.5,15.9,15.8,16.9,16.4,15.5,17.1,18.6
-"Korea",PRK,10.8,9.4,9,8.5,7.3,5.9,7.2,8.8,9.5,10.9,12.5,16.9,15.8,15.9,15.8,15.4,15.1,14.8,14.3,14.4,13.8,13.9,13.5,13.3,12.7,12.4,11.8,11.3,10.7,9.7,9.8,9.2,9,8,7.8,7.9,7.7,7.5,7.6,7.3,7.3,7.4
-"Korea",KOR,48,42.1,45.9,44.9,38.7,41.5,40.2,37.8,36.1,34.1,34.3,28,25.2,22.1,20.8,19.6,18,18.3,17.5,16.9,14.8,12.8,12.9,14.6,11.1,8.4,7.3,7,6.1,5.8,5.7,5.4,5.3,5,4.5,4.5,5.1,4.9,5,4.2,3.2,4.1
+Korea,PRK,10.8,9.4,9,8.5,7.3,5.9,7.2,8.8,9.5,10.9,12.5,16.9,15.8,15.9,15.8,15.4,15.1,14.8,14.3,14.4,13.8,13.9,13.5,13.3,12.7,12.4,11.8,11.3,10.7,9.7,9.8,9.2,9,8,7.8,7.9,7.7,7.5,7.6,7.3,7.3,7.4
+Korea,KOR,48,42.1,45.9,44.9,38.7,41.5,40.2,37.8,36.1,34.1,34.3,28,25.2,22.1,20.8,19.6,18,18.3,17.5,16.9,14.8,12.8,12.9,14.6,11.1,8.4,7.3,7,6.1,5.8,5.7,5.4,5.3,5,4.5,4.5,5.1,4.9,5,4.2,3.2,4.1
 Kuwait,KWT,60.2,66.6,64.9,70.5,75.6,78.6,81.5,82.1,79.9,63.8,42.7,16.3,32.3,61.7,61.3,63.4,67.1,57.1,72,62.8,76.8,58.4,64,59.7,58.9,59.5,51.3,44.6,40.5,41.2,42.1,34.7,38.1,38.7,42.9,37.7,42.5,47,43.6,42.4,42.9,48.7
 Kyrgyzstan,KGZ,39,39.8,40.4,40.3,41.2,40.2,37.6,38.1,43.3,47.7,51,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
 Lao People's Dem Rep,LAO,15,14.8,13.8,15.6,14.7,14.6,14.2,14.4,12.5,12.2,11.5,11.3,10.9,10.8,10,11.5,11,10.5,11,10.6,10.2,10.2,9.6,8,7,7.2,7.2,6.5,7.4,8.7,10,11.1,11.9,11.9,12.5,13.1,12.1,11.3,10.4,8.8,9,8.8
@@ -100,7 +100,7 @@ Liberia,LBR,7.9,8.3,8.4,9.3,9,9.5,8.7,9.2,9.8,10.3,10.9,9.4,9.2,10.7,10.9,11.5,1
 Libya,LBY,28.6,27.5,28.1,30.9,38.4,38,36.4,36.4,32.1,31.7,30.6,31.9,30.8,33.5,35.5,36.1,32.8,36.4,44.9,48.4,46.1,55,52.9,46,47.2,39.2,33.8,31.2,30.9,29.3,28.5,26.1,26.3,24.8,23.2,21.1,20.9,16.6,12.1,11.6,11.4,10.7
 Lithuania,LTU,49.5,44.1,50.6,55.8,59.6,55,54.5,54.5,58.2,65.3,96.4,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
 Luxembourg,LUX,141.7,133.5,146.8,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
-"Macedonia",MKD,35.4,29.2,30,33,30,27.6,34.5,33.2,37.9,29.5,23,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
+Macedonia,MKD,35.4,29.2,30,33,30,27.6,34.5,33.2,37.9,29.5,23,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
 Madagascar,MDG,17.6,18,18,18.4,19.2,19.5,19.6,19.6,19.6,20,20.3,20.7,20.9,21,21.4,21,21.6,21.5,21.3,21.3,22,23.1,22.3,22.4,26,17.5,21.8,22.5,21.5,22.3,22.9,22.1,23.4,24.4,25.6,25.5,25.8,21.5,25.2,25.3,25.4,25.1
 Malawi,MWI,5.1,5,5.2,5.1,5.1,5,5.5,4.8,4.4,4.6,4.7,4.6,4.5,4.5,4.7,5.1,5.3,4.3,5.1,5.4,5.9,5.8,5.1,4.9,5.2,5.2,5,4.9,5,4.9,4.9,4.8,5.1,5.3,4.5,4.4,3.9,3.9,4,3.9,3.6,3.5
 Malaysia,MYS,50.9,48.5,48.3,47.7,52,54.4,54.4,54.4,54,51.8,47.9,43.3,38.8,35.1,32.7,33.5,30.6,30,27.1,26.1,24.8,23.9,23.2,21.3,21.4,20.5,21.8,20.7,16.8,15.8,16.3,15.6,15.7,15.7,14.5,14.6,14.8,14.3,13.8,13.2,13.4,13
@@ -108,16 +108,16 @@ Maldives,MDV,16.6,16,12.5,12.1,12.3,14.3,8.9,13.4,12,10.2,6.7,7.6,5.9,10.9,3.9,4
 Mali,MLI,19,17.2,16.5,17.9,18.4,18,17.7,17.8,17.6,17.7,17.6,17.6,18.2,17.9,17.6,16.9,17.4,16.3,17.1,17,17.8,18,17.4,17.5,18.5,17.5,17.1,16.3,14.5,13.2,15.8,18.8,19.9,20.4,19.8,19.3,18.6,18.3,17.3,16.7,16.1,15.8
 Malta,MLT,86.9,75,78.6,85.5,79.7,83.5,78.8,81.4,68.1,78.6,81.9,87.1,71.1,74.7,66.9,71,60.3,72.1,58,58.3,65,60.2,68.3,63.1,66.9,60.2,64,51.5,49.1,51.4,53.8,54.9,52.7,48.4,45.1,41.9,37,36.3,36.4,37.4,32.1,34.7
 Martinique,MTQ,13.9,13.9,14,14.2,13.5,13.5,14.7,82,83.3,82.5,79.9,77.4,74.3,73.2,72.1,65.7,65.8,70,64.3,64.7,66.1,63.5,60.5,60,55.3,55,53.8,45.8,42.2,47.3,42.1,38.8,37.6,35.8,32,31.1,27,26.3,23.7,26.6,24.7,29.4
-Mauritania,MRT,29.9,29.7,29.1,26.9,26.9,25.8,25.1,23.5,24,22.8,28.5,31,30.9,30.5,29.4,29.3,29.5,27.9,27.5,28.8,30.6,32,31.6,30.4,30.2,28.8,27.4,25.8,24.3,26.5,28.9,33.5,31.3,31.5,35.9,34.2,33.6,33.3,32.4,31.9,31.7,31.3
+Mauritius,MRT,29.9,29.7,29.1,26.9,26.9,25.8,25.1,23.5,24,22.8,28.5,31,30.9,30.5,29.4,29.3,29.5,27.9,27.5,28.8,30.6,32,31.6,30.4,30.2,28.8,27.4,25.8,24.3,26.5,28.9,33.5,31.3,31.5,35.9,34.2,33.6,33.3,32.4,31.9,31.7,31.3
 Mexico,MEX,58.6,56.8,55.2,52.6,50.6,46.9,43.5,45.1,45.4,42.4,41.2,39.8,35.8,35,38.8,38.9,40,39.5,41.2,42.4,40.4,39.8,37.5,35,35,34.6,32.8,30.1,27.5,25.9,25.1,24.3,24.4,24.8,25.1,25.8,25.8,26.4,26.5,26.3,26.6,25.4
-"Moldova",MDA,22.7,21.8,19,19.1,21.5,20,23.4,22.8,28.1,34.1,46.8,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
+Moldova,MDA,22.7,21.8,19,19.1,21.5,20,23.4,22.8,28.1,34.1,46.8,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..,..
 Mongolia,MNG,108.8,81.8,117.3,110.6,105.8,95.6,106.2,87.7,84.7,90,105.3,115.4,101.3,97,93.5,97.5,101.2,99,104.2,106.3,109.6,113.7,112.6,121.4,124.8,114,114.1,129.5,116.1,107.4,119.3,109.4,120.7,127.7,131.2,136.9,129.1,123.9,124.3,117.7,122.4,153
 Morocco,MAR,20.6,20.3,19.8,20.3,18.8,19.6,18.1,18,17.3,17.6,18.4,18.1,18.4,18.8,16.7,15.7,13.1,11.2,11.8,12,13.4,13.6,12.4,12.4,12.2,11.9,10.6,11.5,12.3,12.7,13.3,12.9,13.1,13.2,13.3,12.7,12.5,12.2,11.4,11.7,12.6,13.8
 Mozambique,MOZ,5.6,5.2,5.4,5.2,5.3,5.2,5.2,5.3,5.5,5.5,5.6,6,6.3,6.1,6.1,6,5.7,5.6,5.6,5.6,5.6,5.7,5.8,5.7,5.9,5.4,5.2,6.2,6.5,6.5,6.4,6.4,6.2,5.9,6,5.7,5.5,5.6,5.1,5.1,5,4.9
 Burma (Myanmar),MMR,10.7,9.9,9.3,8.8,8.1,7.9,7.3,7,6.5,6.4,6.4,6.2,6.1,6.8,8.6,8.5,8.3,8.4,8.3,8.2,8.1,7.8,7.4,7.2,6.9,6.8,6.8,6.6,6.4,6.8,6.9,7.1,7.2,6.9,6.4,6.6,5.9,5.6,5.4,5.1,4.8,4.9
 Namibia,NAM,34,35.1,43,32.6,24.9,27.6,16.5,15.2,17.1,17.7,26.4,29.2,27.8,23.9,27.1,26.2,29,27.9,27.2,25.3,31,34,42.7,42.6,41.4,39.7,36.1,33.8,41,39.9,39.9,41.3,41.4,41.4,41.5,43.4,43.9,40.6,40.6,39.6,38.7,36.5
 Nepal,NPL,10,10,10.1,10.1,10.2,10.1,9.7,9.8,9.7,9.6,9.7,9.9,10,10,10.1,9.9,10,10,10,9.9,9.8,9.1,8.6,8.1,8.1,7.9,7.7,7.5,7.3,7.1,7,6.8,6.7,6.6,6.5,6.5,6.3,6.4,6.4,6.4,6.2,6.1
-Netherlands,NLD,89.3,87.6,86,80.3,108.6,90,99.1,93.9,86.1,103.3,86.5,86.1,85.3,75.5,80.8,78,76.2,77.9,74.3,70.8,74.4,70.7,72.6,72.9,68.2,67.3,68.8,66,65.9,61.7,61.8,62.4,59.7,56.3,57.8,57.4,53.1,49,46.3,49,49,45
+The Netherlands,NLD,89.3,87.6,86,80.3,108.6,90,99.1,93.9,86.1,103.3,86.5,86.1,85.3,75.5,80.8,78,76.2,77.9,74.3,70.8,74.4,70.7,72.6,72.9,68.2,67.3,68.8,66,65.9,61.7,61.8,62.4,59.7,56.3,57.8,57.4,53.1,49,46.3,49,49,45
 Netherlands Antilles,ANT,73.3,80,84.7,92.3,100,88.6,84,81.9,73.8,80.4,74.3,75.3,71.5,76.1,77.4,85.8,75.9,75.7,116.9,125.3,120.6,135.1,109.1,114.1,102,107.4,97.7,88,87,85.5,86.5,82.2,84.1,71.1,73.8,71.5,68.7,70.9,70.5,73.9,68.2,64.1
 New Caledonia,NCL,76.6,76.5,71,78.3,83.2,83,75.2,74.1,78.9,73.7,76.5,69.3,70.2,59,57.2,68.2,61.2,60.3,63.7,62.6,65.6,63.7,68.8,65.3,62.9,68.8,67.6,74.1,70.2,80.8,89.3,87.9,86.1,73,69.6,65.4,61.3,65.3,60.6,62,59.7,58
 New Zealand,NZL,142.1,147,122.3,138.5,140.5,146.9,130.4,154.8,131.3,128.2,120.3,138.9,130,128.7,150,117.5,146.9,162.6,130.9,130.9,144.9,128.6,141.6,102.7,150.4,122.5,163.7,137.8,125.2,118.1,121.3,124.6,114.7,116.6,131.7,129.4,115.1,108.3,119.9,114.9,135.1,113.5
@@ -185,28 +185,28 @@ Footnotes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 No footnotes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Source,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Source: Food and Agriculture Organization of the United Nations (FAO), FAOSTAT on-line statistical service (FAO, Rome, 2004).  Available online at: http://apps.fao.org.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Source: Food and Agriculture Organization of the United Nations (FAO), FAOSTAT on-line statistical service (FAO, Rome, 2004).  Available online at: http://apps.fao.org.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Population Division of the Department of Economic and Social Affairs of the United Nations Secretariat.   World Population Prospects: The 2004 Revision. Dataset on CD-ROM.  New York: United Nations.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Technical Notes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Definition:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Meat consumption per capita refers to the total meat retained for use in country per person per year. Total meat includes meat from animals slaughtered in countries, irrespective of their origin, and comprises horsemeat, poultry, and meat from all other domestic or wild animals such as camels, rabbits, reindeer, and game animals.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Meat consumption per capita refers to the total meat retained for use in country per person per year. Total meat includes meat from animals slaughtered in countries, irrespective of their origin, and comprises horsemeat, poultry, and meat from all other domestic or wild animals such as camels, rabbits, reindeer, and game animals.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Years Covered and Frequency of Update: ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Data are available for most countries and regions from 1961 to 2003. Data are updated annually by the Food and Agriculture Organization.  FAO posted the 2003 updates on-line in 2004.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Methodology:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Per capita calculations were conducted by WRI using FAO data on meat production and trade, and using U.N. data on population.   Meat consumption was calculated using a trade balance approach -  total production plus imports, minus exports.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Per capita calculations were conducted by WRI using FAO data on meat production and trade, and using U.N. data on population.   Meat consumption was calculated using a trade balance approach -  total production plus imports, minus exports.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Production data was collected mostly through annual FAO surveys to governments. Data has been grouped in 12 month periods ending 30 September of the years stated in the tables. For example, animals enumerated in a given country at any time between 1 October and 30 September of the following year are shown under the latter year. Data for most species is calculated using the number of animals slaughtered, and the average dressed carcass weight, to estimate the corresponding production of meat. Data relate to animals slaughtered within national boundaries, irrespective of their origin.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Production data was collected mostly through annual FAO surveys to governments. Data has been grouped in 12 month periods ending 30 September of the years stated in the tables. For example, animals enumerated in a given country at any time between 1 October and 30 September of the following year are shown under the latter year. Data for most species is calculated using the number of animals slaughtered, and the average dressed carcass weight, to estimate the corresponding production of meat. Data relate to animals slaughtered within national boundaries, irrespective of their origin.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"In general, trade data have been supplied by governments through magnetic tapes, national publications and, most frequently, FAO questionnaires. For European community countries, with the exception of Spain, data obtained from EUROSTAT have been used. In addition, maximum use has been made of the magnetic tapes provided by the United Nations Statistical Division. To make the coverage of this yearbook as complete as possible, official trade data have sometimes been supplemented with data from unofficial sources. Use has also been made of trade information supplied by other national or international agencies or organizations. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+In general, trade data have been supplied by governments through magnetic tapes, national publications and, most frequently, FAO questionnaires. For European community countries, with the exception of Spain, data obtained from EUROSTAT have been used. In addition, maximum use has been made of the magnetic tapes provided by the United Nations Statistical Division. To make the coverage of this yearbook as complete as possible, official trade data have sometimes been supplemented with data from unofficial sources. Use has also been made of trade information supplied by other national or international agencies or organizations. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Further information on these data and the Food and Agriculture Organization can be obtained at: http://apps.fao.org,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Data Reliability: ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Data is reported by individual countries, which may have varying capacities for data collection.  However, the reporting of agricultural production and trade data are governed by established accounting procedures and are generally considered to be reliable.  The FAO attempts to ensure the quality of these data, but cannot ensure that all data are accurate.  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"In the absence of reliable sources or when information for the latest year is not available in time, figures for quantities and values are estimated on the basis of trade returns of trading partners. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-" For more information, please see  http://www.fao.org/waicent/faostat/agricult/prod-e.htm",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Data is reported by individual countries, which may have varying capacities for data collection.  However, the reporting of agricultural production and trade data are governed by established accounting procedures and are generally considered to be reliable.  The FAO attempts to ensure the quality of these data, but cannot ensure that all data are accurate.  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+In the absence of reliable sources or when information for the latest year is not available in time, figures for quantities and values are estimated on the basis of trade returns of trading partners. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ For more information, please see  http://www.fao.org/waicent/faostat/agricult/prod-e.htm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

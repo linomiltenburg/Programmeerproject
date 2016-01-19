@@ -59,7 +59,7 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
       .attr("y", 6)
       .attr("dy", "-4em")
       .style("text-anchor", "end")
-      .text("Incidentie darmkanker per 100.000 inwoners");
+      .text("Incidentie darmkanker (per 100.000 inwoners)");
 
   // draw bars
   svg.selectAll("bar")

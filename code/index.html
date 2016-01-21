@@ -13,12 +13,13 @@
     <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="datamaps.world.min.js"></script>
     <script src="javascripts/d3.slider.js"></script>
+    <script src="connector.js"></script>
 
-    <div id="container" style="position: relative; width: 1000px; height: 500px;"></div>
+    <div id="container" style="position: relative; width: 1000px; height: 500px;" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)"></div>
     <script src="datamap.js"></script>
     <link rel="stylesheet" href="css/d3.slider.css" />
-    <div id="slider" onclick="updateSlider()"></div>
-    <div>
+    <div id="slider" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)" style="position: relative; width: 1000px; height: 13px;"></div>
+    <div onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)">
       <h2>Incidentie darmkanker per land in 2002</h2>
       <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
     </div>

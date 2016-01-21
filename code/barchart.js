@@ -1,14 +1,13 @@
 d3.csv("data_cancer_descending.csv", function(error, data) {
   if (error) return console.error(error);
 
-  console.log(data)
   // define width, height and margins
   var margin = {top: 40, right: 50, bottom: 100, left: 50},
-      width = 1000 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+      width = 400 - margin.left - margin.right,
+      height = 1000 - margin.top - margin.bottom;
 
-  var x = d3.scale.ordinal().rangeRoundBands([0, width], .10);
-  var y = d3.scale.linear().range([height, 0]);
+  var y = d3.scale.ordinal().rangeRoundBands([0, height], .10);
+  var x = d3.scale.linear().range([0,width]);
 
   var svg = d3.select("#barchart")
       .attr("width", width + margin.left + margin.right)
@@ -18,7 +17,7 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
 
   var xAxis = d3.svg.axis()
       .scale(x)
-      .orient("bottom")
+      .orient("top")
       .ticks(10);
 
   var yAxis = d3.svg.axis()
@@ -28,16 +27,16 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
 
   // bostock referentie
   var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset([-10, 0])
-  .html(function(d) {
-    return "<strong>" + d.country + "</strong> <span style='color:red'>" + d.value + "</span>";
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+      return "<strong>" + d.country + "</strong> <span style='color:red'>" + d.value + "</span>";
   })
 
   svg.call(tip);
 
-  x.domain(data.map(function(d) { return d.country; }));
-  y.domain([0, d3.max(data, function(d) { return parseFloat(d.value); })]).range([(height), 0]);
+  x.domain([0, d3.max(data, function(d) { return parseFloat(d.value); })]).range([0,(width)]);
+  y.domain(data.map(function(d) { return d.country; }));
 
   // draw x-axis
   svg.append("g")
@@ -66,10 +65,10 @@ d3.csv("data_cancer_descending.csv", function(error, data) {
       .data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return x(d.country); })
-      .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(parseFloat(d.value)); })
-      .attr("height", function(d) { return height - y(d.value); })
+      .attr("y", function(d) { return y(d.country); })
+      .attr("height", y.rangeBand())
+      .attr("x", function(d) { return x(parseFloat(d.value)); })
+      .attr("width", function(d) { return height - x(d.value); })
       .on('mouseover',tip.show)
       .on('mouseout', tip.hide)
 

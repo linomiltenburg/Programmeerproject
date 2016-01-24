@@ -1,5 +1,23 @@
+d3.json("country_codes_converter.json", function(error,data1){
+  if (error) return console.error(error);
+  //console.log(data1)
+
 d3.csv("scatterplot_data.csv", function(error, data) {
   if (error) return console.error(error);
+
+  // function to get data of country which is clicked on map
+  takedata = function(code){
+    country = data1[code][0]
+    //console.log(country)
+
+    for (i = 0; i < data.length; i++){
+      if (data[i].country == country){
+        //console.log(data[i][0])
+        //console.log(country)
+      }
+      //list.push(parseFloat(data_list[i]))
+    }
+  }
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
       width = 960 - margin.left - margin.right,
@@ -10,6 +28,11 @@ d3.csv("scatterplot_data.csv", function(error, data) {
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  // add the tooltip area to the webpage
+  var tooltip = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
 
   data.forEach(function(d) {
     d.data_cancer = +d.data_cancer;
@@ -65,7 +88,20 @@ d3.csv("scatterplot_data.csv", function(error, data) {
       .attr("r", 3.5)
       .attr("cx", function(d) { return x(d.data_meat); })
       .attr("cy", function(d) { return y(d.data_cancer); })
-      // .style("fill", function(d) { return color(d.species); });
+      .on("mouseover", function(d) {
+                tooltip.transition()
+                     .duration(200)
+                     .style("opacity", .9);
+                tooltip.html(d["country"] + "<br/> (" + Math.round(d.data_meat)
+      	        + ", " + Math.round(d.data_cancer) + ")")
+                     .style("left", (d3.event.pageX + 5) + "px")
+                     .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                     .duration(500)
+                     .style("opacity", 0);
+            });
 
-
-});
+})
+})

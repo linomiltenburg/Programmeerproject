@@ -53,6 +53,16 @@ d3.json("data_meat_dictionary.json", function(error, data){
   var world_map = new Datamap({
     element: document.getElementById('container'),
 
+    done: function(world_map) {
+      world_map.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+      code = geography.id
+      takedata(code)
+      //remove_old_colour()
+
+
+      })
+    },
+
     // setting some settings for hovering
     geographyConfig: {
       highlightBorderColor: 'black',
@@ -60,6 +70,7 @@ d3.json("data_meat_dictionary.json", function(error, data){
           return '<div class="hoverinfo">' + geography.properties.name + ': ' +  Math.round(list.consumption) + ''
       },
         highlightBorderWidth: 1
+
     },
 
     fills: {
@@ -89,7 +100,7 @@ d3.json("data_meat_dictionary.json", function(error, data){
     year = parseFloat(Math.round(percent * (xMax - xMin) + xMin));
 
     colour = updateColour(year)
-    console.log(year);
     world_map.updateChoropleth(colour)
   }
+  //world_map.legend()
 });

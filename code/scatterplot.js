@@ -1,27 +1,18 @@
-d3.json("country_codes_converter.json", function(error,data1){
-  if (error) return console.error(error);
-  //console.log(data1)
-
 d3.csv("scatterplot_data.csv", function(error, data) {
   if (error) return console.error(error);
 
-  // function to get data of country which is clicked on map
-  takedata = function(code){
-    country = data1[code][0]
-    //console.log(country)
+  takeData = function(name){
 
     for (i = 0; i < data.length; i++){
-      if (data[i].country == country){
-        //console.log(data[i][0])
-        //console.log(country)
+      if (data[i].country == name){
+        selectDot(name)
       }
-      //list.push(parseFloat(data_list[i]))
     }
   }
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
-      width = 960 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      width = 850 - margin.left - margin.right,
+      height = 350 - margin.top - margin.bottom;
 
   var svg = d3.select("#scatterplot")
     .attr("width", width + margin.left + margin.right)
@@ -84,6 +75,7 @@ d3.csv("scatterplot_data.csv", function(error, data) {
   svg.selectAll(".dot")
       .data(data)
     .enter().append("circle")
+      .attr("id", function(d) { return d.country })
       .attr("class", "dot")
       .attr("r", 3.5)
       .attr("cx", function(d) { return x(d.data_meat); })
@@ -103,5 +95,10 @@ d3.csv("scatterplot_data.csv", function(error, data) {
                      .style("opacity", 0);
             });
 
-})
+  selectDot = function(name){
+    name = '#'+name
+    svg.select(name)
+      // .attr("class", "selected_bar")
+      .style("fill", "orange")
+  }
 })

@@ -55,10 +55,9 @@ d3.json("data_meat_dictionary.json", function(error, data){
 
     done: function(world_map) {
       world_map.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-      code = geography.id
-      takedata(code)
-      //remove_old_colour()
-
+      name = geography.properties.name
+      console.log(name)
+      takeData(name)
 
       })
     },

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <h1>Correlatie tussen vleesconsumptie en darmkanker</h1>
-    <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
-  </head>
+  <!-- <head>
+    <h1 style="position: relative; width: 900px;">Correlatie tussen vleesconsumptie en darmkanker</h1>
+    <p style="position: relative; width: 900px;">Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
+  </head> -->
   <body>
-    <div>
-      <h2>Gemiddelde vleesconsumptie per land per jaar tussen 1993 en 2002</h2>
-    </div>
+    <!-- <div>
+      <h2 style="position: relative; width: 900px;">Gemiddelde vleesconsumptie per land per jaar tussen 1993 en 2002</h2>
+    </div> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="datamaps.world.min.js"></script>
     <script src="javascripts/d3.slider.js"></script>
 
-    <div id="container" style="position: relative; width: 1000px; height: 500px;" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)"></div>
+    <div id="container" style="position: relative; width: 800px; height: 500px;" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)"></div>
     <script src="datamap.js"></script>
     <link rel="stylesheet" href="css/d3.slider.css" />
-    <div id="slider" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)" style="position: relative; width: 1000px; height: 13px;"></div>
-    <div onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)">
-      <h2>Incidentie darmkanker per land in 2002</h2>
-      <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
-    </div>
+    <div id="slider" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)" style="position: absolute; left:20px; top:410px; width: 790px; height: 13px;"></div>
+    <!-- <div onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)">
+      <h2 style="position: relative; width: 900px;">Incidentie darmkanker per land in 2002</h2>
+      <p style="position: relative; width: 900px;">Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
+    </div> -->
     <script src="barchart.js"></script>
     <svg id="barchart"></svg>
-    <div>
-      <h2>Scatterplot correlatie vleesconsumptie en darmkanker</h2>
-      <p>Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
-    </div>
+    <!-- <div>
+      <h2 style="position: relative; width: 900px;">Scatterplot correlatie vleesconsumptie en darmkanker</h2>
+      <p style="position: relative; width: 900px;">Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
+    </div> -->
     <script src="scatterplot.js"></script>
-    <svg id="scatterplot"></svg>
+    <svg id="scatterplot" style="position: absolute; left:0; top:450px;"></svg>
     <link rel="stylesheet" type="text/css" href="index.css"/>
 
   </body>

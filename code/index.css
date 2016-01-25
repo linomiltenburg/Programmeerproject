@@ -19,6 +19,9 @@
 
 }
 
+.selected_bar{
+  fill: blue
+}
 
 .d3-tip {
   line-height: 1;
@@ -56,3 +59,23 @@
   height: 28px;
   pointer-events: none;
 }
+
+/*container{
+  display: inline-block;
+  float:left;
+}*/
+
+#barchart{
+  position:absolute;
+  top: 50px;
+  left: 800px;
+
+}
+
+/*#slider{
+  position:absolute;
+  width: 790px
+  height: 13px
+  left:100px
+  top:400px
+}*/

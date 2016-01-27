@@ -22,3 +22,5 @@ Referentielijst:
 barchart with tooltip: http://bl.ocks.org/Caged/6476579
 slider datamap: https://github.com/MasterMaps/d3-slider
 scatterplot: http://bl.ocks.org/weiglemc/6185069
+
+Copyright (c) 2016 Lino Miltenburg

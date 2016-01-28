@@ -1,0 +1,157 @@
+h1 {
+  font: 37px sans-serif;
+}
+h2 {
+  font: 27px sans-serif;
+}
+
+p {
+  font: 10px sans-serif;
+}
+
+p2 {
+  font: 14px sans-serif;
+  padding: 10px;
+  border: 5px solid gray;
+  position: absolute;
+  top: 750px;
+  /*width: 1500px;*/
+}
+
+.axis {
+ font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+ fill: none;
+ stroke: #000;
+ shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange
+
+}
+
+.bar:hover {
+  fill:	orangered
+
+}
+
+.selected_bar{
+  fill: red
+}
+
+.selected_bar1{
+  fill: #6495ED
+}
+
+.dot{
+  fill: orange
+}
+
+.selected_dot{
+  fill: darkred
+}
+
+.selected_dot1{
+  fill: green
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+ /*Creates a small triangle extender for the tooltip  */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* tooltip scatterplot */
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+#barchart{
+  position:absolute;
+  top: 50px;
+  left: 800px;
+
+}
+
+#slider{
+  position: absolute;
+  left: 20px;
+  top: 410px;
+  width: 790px;
+  height: 13px;
+}
+
+#container{
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+
+#scatterplot{
+  position: absolute;
+  left:0;
+  top:450px;
+}
+
+/* legenda */
+.my-legend{
+  position: absolute;
+  top: 375px;
+  left: 320px
+}
+.my-legend .legend-scale ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  }
+.my-legend .legend-scale ul li {
+  display: block;
+  float: left;
+  width: 50px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 80%;
+  list-style: none;
+  }
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 15px;
+  width: 50px;
+  }
+
+.my-legend a {
+  color: #777;
+  sans-serif
+  }

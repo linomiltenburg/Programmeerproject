@@ -1,6 +1,6 @@
 import json
 
-with open('meat_consumption.csv', 'r') as f:
+with open('data/meat_consumption.csv', 'r') as f:
     content = f.readlines()[2:182]
 
 dictionary = {}

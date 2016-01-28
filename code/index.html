@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <!-- <head>
-    <h1 style="position: relative; width: 900px;">Correlatie tussen vleesconsumptie en darmkanker</h1>
-    <p style="position: relative; width: 900px;">Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
-  </head> -->
+  <head>
+    <!-- titles en text elements -->
+    <title style="position: absolute; top: -10px; left: 5px; width: 700px;">Correlatie tussen vleesconsumptie en darmkanker</title>
+    <h1 style="position: absolute; top: -10px; left: 5px; width: 900px;">Correlatie tussen vleesconsumptie en darmkanker</h1>
+    <h2 style="position: absolute; top: 40px; left: 5px; width: 700px;">Vleesconsumptie wereldwijd</h2>
+    <h2 style="position: absolute; top: 40px; right:0; width: 300px;">Incidentie darmkanker</h2>
+  </head>
   <body>
-    <!-- <div>
-      <h2 style="position: relative; width: 900px;">Gemiddelde vleesconsumptie per land per jaar tussen 1993 en 2002</h2>
-    </div> -->
+    <!-- titles en text elements -->
+    <h2 style="position: absolute; top: 440px; left: 80px; width: 700px;">Correlatie</h2>
+    <p style="position: absolute; top: 350px; left: 320px; width: 200px;">Kilogram vlees per inwoner per jaar</p>
+    <p style="position: absolute; top: 690px; right: 0; width: 200px;">Incidentie per 100.000 inwoners</p>
+    <p2>Uit onderzoek van de Wereld Gezondheids Organisatie is gebleken dat het eten van een vergroting van de kans op darmkanker oplevert. In aanvulling  op dit artikel is hier de correlatie tussen vleesconsumptie en de incidentie van darmkanker weergegeven. In de wereldkaart is de wereldwijde vleesconsumptie per jaar te zien in kilogrammen per inwoner. Daaronder is een slider weergegeven die gebruikt kan worden om een bepaald jaar te selecteren waaraan de wereldkaart zich aanpast. In de derde grafiek is de correlatie van de vleesconsumptie en de darmkanker incidentie weergegeven in een scatterplot. Er is een interactie tussen de drie grafieken. Het klikken op een land in de wereldkaart zorgt voor een rode selectie in de andere twee grafieken. Ook kan er in de grafieken een land geselecteerd worden, wat zorgt voor een selectie in de andere grafiek in de kleur groen in de scatterplot en blauw in de barchart.</p2>
+    <!-- scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-    <script src="datamaps.world.min.js"></script>
-    <script src="javascripts/d3.slider.js"></script>
+    <script src="scripts/datamaps.world.min.js"></script>
+    <script src="scripts/d3.slider.js"></script>
+    <script src="scripts/datamap.js"></script>
+    <script src="scripts/barchart.js"></script>
+    <script src="scripts/scatterplot.js"></script>
 
-    <div id="container" style="position: relative; width: 800px; height: 500px;" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)"></div>
-    <script src="datamap.js"></script>
-    <link rel="stylesheet" href="css/d3.slider.css" />
-    <div id="slider" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)" style="position: absolute; left:20px; top:410px; width: 790px; height: 13px;"></div>
-    <!-- <div onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)">
-      <h2 style="position: relative; width: 900px;">Incidentie darmkanker per land in 2002</h2>
-      <p style="position: relative; width: 900px;">Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
-    </div> -->
-    <script src="barchart.js"></script>
+    <!-- legend -->
+    <div class='my-legend' onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)">
+    <div class='legend-scale'>
+      <ul class='legend-labels'>
+        <li><span style='background:#fee5d9;'></span>0-25</li>
+        <li><span style='background:#fcbba1;'></span>25-50</li>
+        <li><span style='background:#fc9272;'></span>50-75</li>
+        <li><span style='background:#fb6a4a;'></span>75-100</li>
+        <li><span style='background:#de2d26;'></span>100-125</li>
+        <li><span style='background:#a50f15;'></span>>125</li>
+        <li><span style='background:#A9A9A9;'></span>geen data</li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- visualization elements -->
+    <div id="slider" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)"></div>
+    <div id="container" onclick="setTimeout(updateSlider, 200)" onmousemove="setTimeout(updateSlider, 200)"></div>
     <svg id="barchart"></svg>
-    <!-- <div>
-      <h2 style="position: relative; width: 900px;">Scatterplot correlatie vleesconsumptie en darmkanker</h2>
-      <p style="position: relative; width: 900px;">Op 26 Oktober 2015 kwam de World Health Organisation met het bericht dat het eten van veel vlees een verhoogde kans heeft op het krijgen van darmkanker. In de onderstaande visualisaties wordt getracht om deze ontdekking te visualiseren.</p>
-    </div> -->
-    <script src="scatterplot.js"></script>
-    <svg id="scatterplot" style="position: absolute; left:0; top:450px;"></svg>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <svg id="scatterplot"></svg>
 
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/d3.slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
   </body>
 </html>

@@ -1,9 +1,9 @@
 import csv
 
-with open('data_cancer1.csv', 'r') as f:
+with open('data/data_cancer1.csv', 'r') as f:
     data_cancer = f.readlines()[1:73]
 
-with open('meat_consumption.csv', 'r') as f:
+with open('data/meat_consumption.csv', 'r') as f:
     data_meat = f.readlines()[2:182]
 
 data = []
@@ -27,7 +27,7 @@ for row in data_cancer:
             data.append(line)
 
 
-with open('scatterplot_data.csv', 'wb') as fp:
+with open('data/scatterplot_data.csv', 'wb') as fp:
     for line in data:
         a = csv.writer(fp,delimiter=',')
         a.writerows(data)

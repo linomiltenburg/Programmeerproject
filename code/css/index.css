@@ -1,3 +1,4 @@
+/*text style*/
 h1 {
   font: 37px sans-serif;
 }
@@ -59,6 +60,7 @@ p2 {
   fill: green
 }
 
+/*style tooltip*/
 .d3-tip {
   line-height: 1;
   font-weight: bold;
@@ -96,6 +98,7 @@ p2 {
   pointer-events: none;
 }
 
+/*style of the visualisation components*/
 #barchart{
   position:absolute;
   top: 50px;
